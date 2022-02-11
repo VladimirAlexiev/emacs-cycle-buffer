@@ -94,7 +94,7 @@
 ;; cycle-buffer-shorten-name: turn ` ' in buf name to `_', also save a couple
 ;; of spaces around each name.
 
-(eval-when-compile (require 'cl))
+(eval-when-compile (require 'cl-lib))
 
 (defvar cycle-buffer-filter
   '((not (eq (aref (buffer-name) 0) ? )) ; " buffer"
